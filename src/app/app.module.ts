@@ -7,7 +7,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { HomeComponent } from './home/home.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
-
+import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +18,15 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     SignUpComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, RouterModule.forRoot(
+      [
+        { path: '', component: AboutUsComponent },
+        { path: 'contact-us', component: ContactUsComponent },
+        { path: 'home', component: HomeComponent},
+        { path: 'sign-in', component: SignInComponent },
+        { path: 'sign-up',component:SignUpComponent }
+      ]
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]
