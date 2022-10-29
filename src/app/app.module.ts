@@ -20,15 +20,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SignUpComponent
   ],
   imports: [
-    BrowserModule, RouterModule.forRoot(
+    BrowserModule, 
+    RouterModule.forRoot(
       [
         { path: 'about-us', component: AboutUsComponent },
         { path: 'contact-us', component: ContactUsComponent },
-        { path: 'home', component: HomeComponent},
+        { path: '', component: HomeComponent},
         { path: 'sign-in', component: SignInComponent },
         { path: 'sign-up',component:SignUpComponent }
       ]
-    ),MatSliderModule, BrowserAnimationsModule,
+    ),
+    MatSliderModule, BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
