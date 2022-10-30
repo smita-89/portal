@@ -10,6 +10,9 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { RouterModule } from '@angular/router';
 import { MatSliderModule } from '@angular/material/slider';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { MainComponent } from './main/main.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +20,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ContactUsComponent,
     HomeComponent,
     SignInComponent,
-    SignUpComponent
+    SignUpComponent,
+    HeaderComponent,
+    FooterComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule, 
