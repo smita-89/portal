@@ -35,7 +35,8 @@ import { ReactiveFormsModule } from '@angular/forms';
         { path: 'contact-us', component: ContactUsComponent },
         { path: '', component: HomeComponent},
         { path: 'sign-in', component: SignInComponent },
-        { path: 'sign-up',component:SignUpComponent }
+        { path: 'sign-up',component:SignUpComponent },
+        { path: 'main', component:MainComponent}
       ]
     ),
     MatSliderModule, BrowserAnimationsModule,
