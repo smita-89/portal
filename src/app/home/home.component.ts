@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { FormControl, FormGroup} from '@angular/forms';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -8,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   constructor() { }
-
+  loginForm= new FormGroup({
+    username: new FormControl(''),
+    age: new FormControl(''),
+    contactnumber: new FormControl(''),
+    education: new FormControl('')
+  })
+  loginUser(){
+    console.warn
+  }
   ngOnInit(): void {
   }
 

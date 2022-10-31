@@ -1,2 +1,14 @@
 <p>about-us works!</p>
 <mat-slider min="1" max="100" step="1" value="50"></mat-slider>
+
+<form #loginForm="ngForm" (ngSubmit)="userLogin(loginForm.value)">
+    <input type="text" placeholder="Enter Your Name" name="username" ngModel>
+    <br><br>
+    <input type="text" placeholder="Enter Your Password" name="password">
+    <br><br>
+    <input type="text" placeholder="Enter Your email" name="email">
+    <br><br>
+    <input type="text" placeholder="Enter Your Number" name="number">
+    <br><br>
+    <button>Login</button>
+</form>

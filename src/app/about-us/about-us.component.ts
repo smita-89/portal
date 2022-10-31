@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class AboutUsComponent implements OnInit {
 
   constructor() { }
+  userLogin(item:any){
+    console.warn(item)
+  }
 
   ngOnInit(): void {
   }
