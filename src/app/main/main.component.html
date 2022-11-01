@@ -1,2 +1,18 @@
-<p>main works!</p>
-<p>Hi</p>
+<h1>About School</h1>
+<form [formGroup]="logForm" (ngSubmit)="logUser()">
+    <input type="text" placeholder="Enter School Name" name="schoolname" formControlName="schoolname">
+    <br><br>
+    <input type="text" placeholder="Enter School Password*" name="schoolpassward" formControlName="schoolpassward">
+    <br>
+    <span style="color: red;" *ngIf="schoolpassward && schoolpassward.invalid && schoolpassward.touched">Please Enter The Required Field </span>
+    <br>
+    <input type="text" placeholder="Enter School Shape* " name="schoolshape" formControlName="schoolshape">
+    <br>
+    <span style="color: red;" *ngIf="schoolshape && schoolshape.invalid && schoolshape.touched">Please Enter The Required Field</span>
+    <br>
+    <input type="text" placeholder="Enter School Email*" name="schoolemail" formControlName="schoolemail">
+    <br>
+    <span style="color: red;" *ngIf="schoolemail && schoolemail.invalid && schoolemail.touched">Please Enter The Required Field</span>
+    <br>
+    <button [disabled]="logForm.invalid">Submit</button>
+</form>
