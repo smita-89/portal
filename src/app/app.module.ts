@@ -15,6 +15,9 @@ import { FooterComponent } from './footer/footer.component';
 import { MainComponent } from './main/main.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+
+import {MatIconModule} from '@angular/material/icon';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,6 +43,7 @@ import { ReactiveFormsModule } from '@angular/forms';
       ]
     ),
     MatSliderModule, BrowserAnimationsModule,
+    MatIconModule,
     FormsModule,
     ReactiveFormsModule,
   ],
