@@ -4,15 +4,18 @@
     <br><br>
     <input type="text" placeholder="Enter School Password*" name="schoolpassward" formControlName="schoolpassward">
     <br>
-    <span style="color: red;" *ngIf="schoolpassward && schoolpassward.invalid && schoolpassward.touched">Please Enter The Required Field </span>
+    <span class="warning" *ngIf="schoolpassward && schoolpassward.invalid && schoolpassward.touched">Please Enter The Required Field </span>
     <br>
     <input type="text" placeholder="Enter School Shape* " name="schoolshape" formControlName="schoolshape">
     <br>
-    <span style="color: red;" *ngIf="schoolshape && schoolshape.invalid && schoolshape.touched">Please Enter The Required Field</span>
+    <span class="warning" *ngIf="schoolshape && schoolshape.invalid && schoolshape.touched">Please Enter The Required Field</span>
     <br>
     <input type="text" placeholder="Enter School Email*" name="schoolemail" formControlName="schoolemail">
     <br>
-    <span style="color: red;" *ngIf="schoolemail && schoolemail.invalid && schoolemail.touched">Please Enter The Required Field</span>
+    <span class="warning" *ngIf="schoolemail && schoolemail.invalid && schoolemail.touched">Please Enter The Required Field</span>
     <br>
     <button [disabled]="logForm.invalid">Submit</button>
 </form>
+
+
+<h2>Money Solutions for all your needs, throughout your life.</h2>
