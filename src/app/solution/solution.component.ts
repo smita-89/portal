@@ -6,6 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./solution.component.css']
 })
 export class SolutionComponent implements OnInit {
+  solution = {
+    title: 'DISCOVER',
+    subtitle: ' LIFE INSURANCE',
+    desc: 'Financially protect what you value - your child’s future, retirement income and financial',
+    button: "Buye"
+  };
 
   constructor() { }
 
