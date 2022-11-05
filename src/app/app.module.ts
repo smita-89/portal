@@ -17,6 +17,8 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import {MatIconModule} from '@angular/material/icon';
+import { SolutionComponent } from './solution/solution.component';
+import { Solution1Component } from './solution1/solution1.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import {MatIconModule} from '@angular/material/icon';
     SignUpComponent,
     HeaderComponent,
     FooterComponent,
-    MainComponent
+    MainComponent,
+    SolutionComponent,
+    Solution1Component
   ],
   imports: [
     BrowserModule, 
