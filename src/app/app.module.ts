@@ -16,7 +16,7 @@ import { MainComponent } from './main/main.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 
-import {MatIconModule} from '@angular/material/icon';
+import { MatIconModule } from '@angular/material/icon';
 import { SolutionComponent } from './solution/solution.component';
 import { Solution1Component } from './solution1/solution1.component';
 
@@ -35,15 +35,15 @@ import { Solution1Component } from './solution1/solution1.component';
     Solution1Component
   ],
   imports: [
-    BrowserModule, 
+    BrowserModule,
     RouterModule.forRoot(
       [
+        { path: '', component: HomeComponent },
         { path: 'about-us', component: AboutUsComponent },
         { path: 'contact-us', component: ContactUsComponent },
-        { path: '', component: HomeComponent},
         { path: 'sign-in', component: SignInComponent },
-        { path: 'sign-up',component:SignUpComponent },
-        { path: 'main', component:MainComponent}
+        { path: 'sign-up', component: SignUpComponent },
+        { path: 'main', component: MainComponent }
       ]
     ),
     MatSliderModule, BrowserAnimationsModule,
