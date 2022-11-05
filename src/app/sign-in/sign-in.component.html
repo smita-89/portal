@@ -1,14 +1,12 @@
-<p>sign-in works!</p>
-<p> An absolute url:
-    <a href="https://www.w3schools.com">Visit the w3schools! </a>
-</p>
-
-<span>An absolute url:
-    <a href="https://www.jeevansathi.com">Jeevansathi Meet Up!</a></span>
-
-    <!-- <button mat-button>Angular Mat Button</button>
-    <button mat-raised-button>Basic</button>
-    <button mat-raised-button color="primary">Primary</button>
-    <button mat-raised-button color="accent">Accent</button>
-    <button mat-raised-button color="warn">Warn</button>
-    <button mat-raised-button disabled>Disabled</button> -->
+<form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+    <input type="text" placeholder="Enter Your Name" name="username" formControlName="username" >
+    <br>
+    <span style="color: red;" *ngIf="username && username.invalid && username.touched">This field is not valid</span><br>
+    <input type="text" placeholder="Enter Your Age" name="age" formControlName="age">
+    <br><br>
+    <input type="text" placeholder="Enter Your Contact number" name="contactnumber" formControlName="contactnumber">
+    <br><br>
+    <input type="text" placeholder="Enter Your Education" name="education" formControlName="education">
+    <br><br>
+    <button [disabled]= "loginForm.invalid" >Submit</button>
+</form>

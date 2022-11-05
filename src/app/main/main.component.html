@@ -2,7 +2,7 @@
 <form [formGroup]="logForm" (ngSubmit)="logUser()">
     <input type="text" placeholder="Enter School Name" name="schoolname" formControlName="schoolname">
     <br><br>
-    <input type="text" placeholder="Enter School Password*" name="schoolpassward" formControlName="schoolpassward">
+    <input type="password" placeholder="Enter School Password*" name="schoolpassward" formControlName="schoolpassward">
     <br>
     <span class="warning" *ngIf="schoolpassward && schoolpassward.invalid && schoolpassward.touched">Please Enter The Required Field </span>
     <br>
