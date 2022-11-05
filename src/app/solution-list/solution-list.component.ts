@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./solution-list.component.css']
 })
 export class SolutionListComponent implements OnInit {
+  proctSo = [];
   solutions= [
     {
       title: 'DISCOVER',
@@ -26,7 +27,7 @@ export class SolutionListComponent implements OnInit {
       button: "Buye"
     }
   ];
-  
+
 
   constructor() { }
 
