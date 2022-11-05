@@ -1,5 +1,4 @@
 <p>solution-list works!</p>
-<div class="solution-list">
-    <app-solution [solution]="solution"></app-solution>
-    <app-solution [solution]="solution2"></app-solution>
+<div class="solution-list" *ngFor="let soultion of solutions">
+    <app-solution [solution]="soultion"></app-solution>
 </div>
